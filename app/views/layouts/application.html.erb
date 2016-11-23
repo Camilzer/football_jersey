@@ -13,11 +13,16 @@
   	<div id="sidebar">
   		<div id="logo">
   			<%= link_to root_path do %>
-  				<%= image_tag "logo.jpg" %>
+  				<%= image_tag "Dragonball" %>
   			<% end %>
   		</div>
 
   		<ul>
+      <p> 
+          <%= form_tag(posts_path, :method => "get", id: "search-form") do %>
+          <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+          <%= submit_tag "Search" %>
+        <% end %></p>
   			<li class="category">Website</li>
   			<li><%= link_to "Blog", root_path %></li>
   			<li><%= link_to "About", about_path%></li>
@@ -36,6 +41,7 @@
         <% else %>
           <%= link_to "Retour à l'accueil", root_path %>
         <% end %>
+          
         <% if user_signed_in? %>
           <div class="buttons">
             <button class="button"><%= link_to "New Post", new_post_path %></button>
