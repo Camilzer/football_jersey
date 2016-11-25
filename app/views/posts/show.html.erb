@@ -2,9 +2,8 @@
 	<h1 class="title">
 		<%= @post.title %>
 	</h1>
-	<% if @post.image? %>
-		 <%= image_tag @post.image.url %>
-	<% end %>
+		 <%= image_tag "missing.png" %>
+
 
 	<p class="date">
 		Submitted <%= time_ago_in_words(@post.created_at) %> Ago 

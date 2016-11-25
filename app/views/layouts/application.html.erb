@@ -35,6 +35,7 @@
 
     <div id="main_content">
       <div id="header">
+                <h1> FOOT JERSEY </h1>
         <% if current_page?(root_path) %>
           <p>Accueil</p>
         <% elsif current_page?(about_path) %>
@@ -42,7 +43,6 @@
         <% else %>
           <%= link_to "Retour à l'accueil", root_path %>
         <% end %>
-          
         <% if user_signed_in? %>
           <div class="buttons">
             <button class="button"><%= link_to "New Post", new_post_path %></button>
