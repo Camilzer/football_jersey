@@ -3,7 +3,7 @@
 		<%= @post.title %>
 	</h1>
 	<% if @post.image? %>
-		 <%= image_tag @post.image.url(:thumb) %>
+		 <%= image_tag @post.image.url %>
 	<% end %>
 
 	<p class="date">
