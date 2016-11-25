@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Version des composants:
 
-* Ruby version
+* Ruby version 2.3.1
 
-* System dependencies
+* Rails version 5.0.0.1
 
-* Configuration
 
-* Database creation
+Ce site est l'encyclopédie du maillot. Le but est d'y répertorier tout les maillots du monde, du Real Madrid au club de notre quartier.
+Ce site est développé sur Ruby on Rails.
 
-* Database initialization
+Point à améliorer :
 
-* How to run the test suite
+* L'ajout de l'image par l'utilisateur a été réussi en local mais en développement, il y a eu un problème, on a donc retiré cette fonctionnalité.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Amélioration du système Sign in .
